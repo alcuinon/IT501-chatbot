@@ -6,7 +6,7 @@ const status = document.getElementById("status");
 
 // initial welcome
 addBotMessage(
-  "Hi — I'm your chatbot !!!!!!"
+  "Hi — I'm your chatbot !"
 );
 
 // event handlers
@@ -22,7 +22,7 @@ async function onSend() {
   if (!text) return;
   addUserMessage(text);
   inputEl.value = "";
-  status.textContent = "Typing...";
+  status.textContent = "Typing........";
   await simulateBotReply(text);
 }
 
